@@ -1,0 +1,22 @@
+uuid: 25794f6a-c8d9-4237-999c-8545aa32ecda
+langcode: en
+status: true
+dependencies:
+  module:
+    - tasklist
+  theme:
+    - bootstrap
+_core:
+  default_config_hash: WAo0R7C1Mti6MSV6mkubCnQF0BNbiRtR2PK5F2iA6m4
+id: tasklist
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: tasklist
+settings:
+  id: tasklist
+  label: Tasklist
+  provider: tasklist
+  label_display: '0'
+visibility: {  }

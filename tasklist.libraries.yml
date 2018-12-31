@@ -1,0 +1,10 @@
+tasklist:
+  version: 1.x
+  css:
+    theme:
+      lib/style.css: {}
+scripts:
+  js:
+    lib/tasklist.js: {}
+  dependencies:
+    - core/jquery

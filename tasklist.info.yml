@@ -1,0 +1,9 @@
+name: Tasklist
+description: Tasklist block for daily tasks
+package: Custom
+type: module
+version: 1.0
+core: 8.x
+dependencies:
+  - node
+  - block

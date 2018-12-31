@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Template for displaying tasklist.
+ *
+ * Available variables:
+ */
+#}
+
+<div id="task-listing">
+  <h2>Tasks:</h2>
+    <ul>
+    {% for key, value in list %}
+      <li class="task">{{ value }}</li>
+    {% endfor %}
+    </ul>
+  <h5>Add Another Task</h5>
+  {{ form }}
+</div>

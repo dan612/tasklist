@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains tasklist.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function tasklist_theme() {
+  return [
+    'tasklist' => [
+      'variables' => [
+        'form' => NULL,
+        'list' => NULL,
+        'user' => NULL,
+      ],
+    ],
+  ];
+}
