@@ -38,7 +38,7 @@
        $form['actions']['#type'] = 'actions';
        $form['actions']['submit'] = [
         '#type' => 'submit',
-        '#value' => $this->t('+ Add Task'),
+        '#value' => $this->t('+ Add New Task'),
        ];
        return $form;
      }
@@ -48,7 +48,7 @@
      */
 
      public function validateForm(array &$form, FormStateInterface $form_state) {
-       // Nothing.
+       // Add validation rules in here.
      }
 
      /**
@@ -56,7 +56,6 @@
      */
 
      public function submitForm(array &$form, FormStateInterface $form_state) {
-
 
        $connection = \Drupal::database();
 
@@ -72,7 +71,6 @@
           'closed' => NULL,
         ])
         ->execute();
-
        drupal_set_message($this->t("Task Added"));
    }
  }

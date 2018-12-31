@@ -8,12 +8,20 @@
 #}
 
 <div id="task-listing">
-  <h2>Tasks:</h2>
-    <ul>
-    {% for key, value in list %}
-      <li class="task">{{ value }}</li>
-    {% endfor %}
-    </ul>
-  <h5>Add Another Task</h5>
-  {{ form }}
+  <div class="tasks-wrapper">
+    <h2>Tasks:</h2>
+    <div class="tasks">
+      {% for key, value in list %}
+        <div class="cust-checkbox">
+          <i class="material-icons">check_box_outline_blank</i>
+          <div class="checkbox-label">{{ value }}</div>
+          </div>
+      {% endfor %}
+      </div>
+    <a class="task-action clear">Clear</a>
+  </div>
+  <div class="add-task">
+    {{ form }}
+  </div>
+  <a class="task-action archive">View Archive</a>
 </div>

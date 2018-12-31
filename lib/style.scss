@@ -1,3 +1,59 @@
 #task-listing {
-  background: purple;
+
+  background: whitesmoke;
+
+  h2 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0;
+  }
+  .cust-checkbox {
+    margin: 5px 0;
+    cursor: pointer;
+
+    &:hover {
+      background: darken(whitesmoke, 10%);
+    }
+  }
+
+  .material-icons {
+    vertical-align: middle;
+    color: #17a2b8;
+  }
+
+  .checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: capitalize;
+    max-width: 84%;
+    font-size: 13px;
+    color: lighten(#343a40, 5%);
+  }
+
+  .add-task {
+    margin: 10px 0;
+    padding: 15px 0;
+    padding-bottom: 15px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .archive {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .tasks {
+    margin: 20px 0;
+  }
+
+  .task-action.clear {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+
 }

@@ -1,4 +1,41 @@
 #task-listing {
-  background: purple; }
+  background: whitesmoke; }
+  #task-listing h2 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0; }
+  #task-listing .cust-checkbox {
+    margin: 5px 0;
+    cursor: pointer; }
+    #task-listing .cust-checkbox:hover {
+      background: gainsboro; }
+  #task-listing .material-icons {
+    vertical-align: middle;
+    color: #17a2b8; }
+  #task-listing .checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: capitalize;
+    max-width: 84%;
+    font-size: 13px;
+    color: #3f474e; }
+  #task-listing .add-task {
+    margin: 10px 0;
+    padding: 15px 0;
+    padding-bottom: 15px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray; }
+  #task-listing .archive {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px; }
+  #task-listing .tasks {
+    margin: 20px 0; }
+  #task-listing .task-action.clear {
+    display: block;
+    width: 100%;
+    text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
