@@ -1,9 +1,5 @@
 <?php
 
-function tasklist_install() {
-
-}
-
 function tasklist_schema() {
   $schema['tasks'] = array(
     'description' => 'Stores tasks for a quick tasklist.',
