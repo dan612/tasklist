@@ -68,7 +68,7 @@
           'task' => $task,
           'status' => "New",
           'created' => $time,
-          'closed' => NULL,
+          'closed' => 0,
         ])
         ->execute();
        drupal_set_message($this->t("Task Added"));

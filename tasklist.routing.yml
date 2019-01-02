@@ -1,0 +1,7 @@
+tasklist.clear:
+  path: '/admin/tasklist/actions/clear'
+  defaults:
+    _controller: '\Drupal\tasklist\Controller\TaskController::clearTasks'
+    _title: 'Clear Tasks'
+  requirements:
+    _permission: 'access content'

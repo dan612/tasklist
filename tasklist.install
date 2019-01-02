@@ -1,0 +1,40 @@
+<?php
+
+function tasklist_install() {
+
+}
+
+function tasklist_schema() {
+  $schema['tasks'] = array(
+    'description' => 'Stores tasks for a quick tasklist.',
+    'fields' => array(
+      'uid' => array(
+        'type' => 'int',
+        'length' => 10,
+        'description' => "ID of the logged in user.",
+      ),
+      'task' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => "A task added by the user.",
+      ),
+      'status' => array(
+        'type' => 'varchar',
+        'default' => "New",
+        'length' => 255,
+        'description' => "Status of the task for display.",
+      ),
+      'created' => array(
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Time of creation for the task",
+      ),
+      'closed' => array(
+        'type' => 'varchar',
+        'length' => 50,
+        'description' => "Time of closure for the task",
+      ),
+    ),
+  );
+  return $schema;
+}

@@ -3,7 +3,7 @@
   #task-listing h2 {
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
-    text-align: center;
+    text-align: left;
     margin: 0; }
   #task-listing .cust-checkbox {
     margin: 5px 0;
@@ -29,13 +29,11 @@
   #task-listing .archive {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding-top: 5px; }
   #task-listing .tasks {
     margin: 20px 0; }
-  #task-listing .task-action.clear {
-    display: block;
-    width: 100%;
-    text-align: right; }
+  #task-listing .task-action.clear:hover {
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

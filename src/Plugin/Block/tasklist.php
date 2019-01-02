@@ -40,7 +40,7 @@ class tasklist extends BlockBase {
       // Function to gather tasks associated with the logged in user
       function fetchTasks($uid){
         $connection = \Drupal::database();
-        $query = $connection->query("SELECT task FROM tasks WHERE uid = $uid");
+        $query = $connection->query("SELECT task FROM tasks WHERE uid = $uid AND status='New'");
         $tasks_raw = $query->fetchAll();
         // Tasks are retrieved as array of objects
         // Cast VALUES ONLY to new array
